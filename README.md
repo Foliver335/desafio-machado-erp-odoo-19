@@ -2,6 +2,33 @@
 
 This document explains how to install the `fuel_control` module, set access rights, and use the main features.
 
+## 0) Ambientation:
+Windows WSL instalation ( if you uses linux distribuition, ignore this part:
+1. Open PowerShell as an administrator.
+2. Run: wsl --install.
+3. Restart your computer when prompted.
+4. Open Ubuntu (or the installed distro) and create a username and password.
+5. Update the system with sudo apt update && sudo apt upgrade.
+8. instale o DOcker Desktop ou o docker diretamente no terminal linux.
+   (consultar documentação Docker [hub](https://docs.docker.com/get-started/get-docker/))
+
+**instalation**
+1. No WSL/Linux, escolha uma pasta de trabalho. Ex.: ~/projects.
+2. Crie a pasta: mkdir -p ~/projects e entre nela: cd ~/projects.
+3. Crie uma pasta para o desafio, por exemplo: mkdir -p odoo19_setup.
+4. Entre nela: cd odoo19_setup.
+5. Faça o clone do script de instalacao (Yenthe666):
+git clone https://github.com/Yenthe666/InstallScript.git
+6. Entre na pasta do script: cd InstallScript.
+7. Verifique o script da versao 19 (quando houver, use o .sh adequado).
+8. Dê permissao de execucao: chmod +x odoo_install.sh (ou o script da versao 19).
+9. Execute o script conforme a documentacao do repo.
+10. Clone esse repositório
+11. Alternativa: se preferir Docker, criei um docker-compose.yml para testes na pasta do projeto e suba o Odoo com o comando docker compose up -d.
+12. Em Docker, abra o navegador e finalize a criacao do banco no localhost:8069.
+13. Crie a estrutura do seu projeto em uma pasta separada, ex.: ~/projects/desafio_erp_odoo_19.
+14. Atualize a lista de Apps e instale o modulo buscando por "Fuel Control".
+
 ## 1) Module installation
 
 1. Ensure the `custom_addons/` directory is included in the Odoo `addons_path`.
