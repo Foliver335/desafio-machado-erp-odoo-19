@@ -1,0 +1,26 @@
+{
+    "name": "Fuel Control",
+    "version": "19.0.1.0.0",
+    "category": "Operations/Fleet",
+    "summary": "Refuel and fuel stock control",
+    "author": "Felipe Fause",
+    "website": "",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "fleet",
+        "purchase",
+        "stock",
+    ],
+    "data": [
+        "security/fuel_control_security.xml",
+        "security/ir.model.access.csv",
+        "views/fuel_refuel_views.xml",
+        "views/fuel_tank_views.xml",
+        "views/fuel_tank_entry_views.xml",
+        "views/stock_picking_views.xml",
+        "data/fuel_tank_data.xml",
+    ],
+    "installable": True,
+    "application": True,
+}

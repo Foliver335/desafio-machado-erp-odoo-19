@@ -1,0 +1,357 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fuel_control
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260118\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-08 18:21+0000\n"
+"PO-Revision-Date: 2026-02-08 18:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fuel_control
+#: model_terms:ir.actions.act_window,help:fuel_control.action_fuel_refuel_report
+msgid "Analyze refuels."
+msgstr "Analise os reabastecimentos."
+
+#. module: fuel_control
+#: model_terms:ir.actions.act_window,help:fuel_control.action_fuel_tank_entry_report
+msgid "Analyze stock entries."
+msgstr "Analise as entradas de estoque."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__capacity_liters
+msgid "Capacity (L)"
+msgstr "Capacidade (L)"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__code
+msgid "Code"
+msgstr "Código"
+
+#. module: fuel_control
+#: model_terms:ir.actions.act_window,help:fuel_control.action_fuel_refuel
+msgid "Create a refuel."
+msgstr "Crie um reabastecimento."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__create_uid
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__create_uid
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__create_date
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__create_date
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__current_stock
+msgid "Current Stock (L)"
+msgstr "Estoque atual (Lt)"
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/fuel_tank.py:0
+msgid "Current stock cannot be negative."
+msgstr "O estoque atual não pode ser negativo."
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/fuel_tank.py:0
+msgid "Current stock cannot exceed tank capacity."
+msgstr "O estoque atual não pode exceder a capacidade do tanque."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__date
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__date
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__date
+msgid "Date and Time"
+msgstr "Data e hora"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__display_name
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__display_name
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__display_name
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__display_name
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nome de exibição"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__driver_id
+msgid "Driver"
+msgstr "Motorista"
+
+#. module: fuel_control
+#: model:ir.model.fields,help:fuel_control.field_fuel_refuel__driver_id
+msgid "Driver address of the vehicle"
+msgstr "Endereço do condutor do veículo"
+
+#. module: fuel_control
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_report_entry
+#: model_terms:ir.ui.view,arch_db:fuel_control.view_fuel_tank_entry_graph
+msgid "Entries"
+msgstr "Entradas"
+
+#. module: fuel_control
+#: model:ir.actions.act_window,name:fuel_control.action_fuel_tank_entry_report
+msgid "Entry Report"
+msgstr "Relatório de entrada"
+
+#. module: fuel_control
+#: model_terms:ir.ui.view,arch_db:fuel_control.view_stock_picking_form_fuel
+msgid "Fuel"
+msgstr "Combustível"
+
+#. module: fuel_control
+#: model:res.groups,name:fuel_control.group_fuel_admin
+msgid "Fuel Control - Administrator"
+msgstr "Combustível - Administrador"
+
+#. module: fuel_control
+#: model:res.groups,name:fuel_control.group_fuel_analyst
+msgid "Fuel Control - Analyst"
+msgstr "Combustível - Analista"
+
+#. module: fuel_control
+#: model:res.groups,name:fuel_control.group_fuel_driver
+msgid "Fuel Control - Driver"
+msgstr "Combustível - Motorista"
+
+#. module: fuel_control
+#: model:ir.module.category,name:fuel_control.module_category_fuel_control
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_root
+#: model:res.groups.privilege,name:fuel_control.res_group_privilege_fuel
+msgid "Fuel Control"
+msgstr "Controle de Combustivel"
+
+#. module: fuel_control
+#: model:ir.model,name:fuel_control.model_fuel_control_mixin
+msgid "Fuel Control Mixin"
+msgstr "Mixin de Controle de Combustivel"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__fuel_liters
+msgid "Fuel Liters"
+msgstr "Combustivel em Litros"
+
+#. module: fuel_control
+#: model:ir.model,name:fuel_control.model_fuel_tank_entry
+msgid "Fuel Stock Entry"
+msgstr "Entrada de Estoque de Combustivel"
+
+#. module: fuel_control
+#: model:ir.actions.act_window,name:fuel_control.action_fuel_tank
+#: model:ir.model,name:fuel_control.model_fuel_tank
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__fuel_tank_id
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__tank_id
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__fuel_tank_id
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_tank
+#: model_terms:ir.ui.view,arch_db:fuel_control.view_fuel_tank_form
+msgid "Fuel Tank"
+msgstr "Tanque de Combustivel"
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/stock_picking.py:0
+msgid "Fuel liters cannot be negative."
+msgstr "Os litros de combustível não podem ser negativos."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__fuel_entry_id
+msgid "Generated Entry"
+msgstr "Entrada gerada"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__hour_meter
+msgid "Hour Meter"
+msgstr "Hodrômetro"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__id
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__id
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__id
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__id
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__id
+msgid "ID"
+msgstr "Id"
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/fuel_refuel.py:0
+msgid "Insufficient tank stock."
+msgstr "Estoque insuficiente no tanque."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__write_uid
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__write_uid
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__write_date
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__write_date
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__liters
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__liters
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__liters
+msgid "Liters"
+msgstr "Litros"
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/fuel_refuel.py:0
+#: code:addons/fuel_control/models/fuel_tank_entry.py:0
+msgid "Liters must be greater than zero."
+msgstr "Os litros devem ser maiores que zero."
+
+#. module: fuel_control
+#: model:ir.model.fields.selection,name:fuel_control.selection__fuel_tank_entry__source__manual
+msgid "Manual"
+msgstr "Entrada Manual"
+
+#. module: fuel_control
+#: model:ir.model.fields,help:fuel_control.field_fuel_refuel__hour_meter
+msgid "Measure the operating time of the engine or equipment (hours)."
+msgstr "Mede o tempo de funcionamento do motor ou vehicleo (horas)"
+
+#. module: fuel_control
+#: model:ir.model.fields,help:fuel_control.field_fuel_refuel__odometer
+msgid "Measures the distance traveled in kilometers or Miles"
+msgstr "Mede a distância percorrida em Km(quilômetros) ou Mph(milhas)"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__odometer
+msgid "Odometer"
+msgstr "Hodômetro"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__price_per_liter
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__price_per_liter
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank__price_per_liter
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__price_per_liter
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__fuel_price_per_liter
+msgid "Price per Liter"
+msgstr "Preço por Litro"
+
+#. module: fuel_control
+#: model:ir.model.fields.selection,name:fuel_control.selection__fuel_tank_entry__source__purchase
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__purchase_id
+msgid "Purchase Order"
+msgstr "Pedido de Compra"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__picking_id
+msgid "Receipt"
+msgstr "Recebimento"
+
+#. module: fuel_control
+#: model:ir.model,name:fuel_control.model_fuel_refuel
+#: model_terms:ir.ui.view,arch_db:fuel_control.view_fuel_refuel_form
+msgid "Refuel"
+msgstr "Reabastecimento"
+
+#. module: fuel_control
+#: model:ir.actions.act_window,name:fuel_control.action_fuel_refuel_report
+msgid "Refuel Report"
+msgstr "Relatório de Reabastecimento"
+
+#. module: fuel_control
+#: model:ir.actions.act_window,name:fuel_control.action_fuel_refuel
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_refuel
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_report_refuel
+#: model_terms:ir.ui.view,arch_db:fuel_control.view_fuel_refuel_graph
+msgid "Refuels"
+msgstr "Reabastecimentos"
+
+#. module: fuel_control
+#: model_terms:ir.actions.act_window,help:fuel_control.action_fuel_tank_entry
+msgid "Register a stock entry."
+msgstr "Registre uma entrada de estoque."
+
+#. module: fuel_control
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_reports
+msgid "Reports"
+msgstr "Relatórios"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__user_id
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__user_id
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__user_id
+msgid "Responsible User"
+msgstr "Usuário Responsável"
+
+#. module: fuel_control
+#: model_terms:ir.actions.act_window,help:fuel_control.action_fuel_tank
+msgid "Review tank data."
+msgstr "Revise os dados do tanque."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__source
+msgid "Source"
+msgstr "Origem"
+
+#. module: fuel_control
+#: model:ir.actions.act_window,name:fuel_control.action_fuel_tank_entry
+#: model:ir.ui.menu,name:fuel_control.menu_fuel_tank_entry
+msgid "Stock Entries"
+msgstr "Entradas de Estoque"
+
+#. module: fuel_control
+#: model_terms:ir.ui.view,arch_db:fuel_control.view_fuel_tank_entry_form
+msgid "Stock Entry"
+msgstr "Entrada de Estoque"
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/fuel_tank_entry.py:0
+msgid "Stock exceeds tank capacity."
+msgstr "O estoque excede a capacidade do tanque."
+
+#. module: fuel_control
+#. odoo-python
+#: code:addons/fuel_control/models/fuel_tank.py:0
+msgid "Tank capacity must be 6000 liters."
+msgstr "A capacidade do tanque deve ser de 6000 litros."
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__total_amount
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__total_amount
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_tank_entry__total_amount
+#: model:ir.model.fields,field_description:fuel_control.field_stock_picking__fuel_total_amount
+msgid "Total"
+msgstr "Total"
+
+#. module: fuel_control
+#: model:ir.model,name:fuel_control.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: fuel_control
+#: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__vehicle_id
+msgid "Vehicle/Plate"
+msgstr "Veículo/Placa"

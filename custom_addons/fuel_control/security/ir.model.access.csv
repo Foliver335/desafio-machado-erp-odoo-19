@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fuel_refuel_driver,fuel.refuel driver,fuel_control.model_fuel_refuel,fuel_control.group_fuel_driver,1,0,1,0
+access_fuel_refuel_analyst,fuel.refuel analyst,fuel_control.model_fuel_refuel,fuel_control.group_fuel_analyst,1,0,0,0
+access_fuel_refuel_admin,fuel.refuel admin,fuel_control.model_fuel_refuel,fuel_control.group_fuel_admin,1,1,1,1
+access_fuel_tank_admin,fuel.tank admin,fuel_control.model_fuel_tank,fuel_control.group_fuel_admin,1,1,1,1
+access_fuel_tank_entry_analyst,fuel.tank.entry analyst,fuel_control.model_fuel_tank_entry,fuel_control.group_fuel_analyst,1,0,0,0
+access_fuel_tank_entry_admin,fuel.tank.entry admin,fuel_control.model_fuel_tank_entry,fuel_control.group_fuel_admin,1,1,1,1

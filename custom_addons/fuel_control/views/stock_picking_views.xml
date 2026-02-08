@@ -1,0 +1,26 @@
+<odoo>
+    <record id="view_stock_picking_form_fuel" model="ir.ui.view">
+        <field name="name">stock.picking.form.fuel</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Fuel" groups="fuel_control.group_fuel_admin">
+                    <group>
+                        <group>
+                            <field name="fuel_tank_id"/>
+                            <field name="fuel_liters"/>
+                        </group>
+                        <group>
+                            <field name="fuel_price_per_liter"/>
+                            <field name="fuel_total_amount" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="fuel_entry_id" readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

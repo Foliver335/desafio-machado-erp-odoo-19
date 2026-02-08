@@ -1,0 +1,99 @@
+<odoo>
+    <record id="action_fuel_tank_entry" model="ir.actions.act_window">
+        <field name="name">Stock Entries</field>
+        <field name="res_model">fuel.tank.entry</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Register a stock entry.
+            </p>
+        </field>
+    </record>
+    <record id="action_fuel_tank_entry_report" model="ir.actions.act_window">
+        <field name="name">Entry Report</field>
+        <field name="res_model">fuel.tank.entry</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Analyze stock entries.
+            </p>
+        </field>
+    </record>
+    <record id="view_fuel_tank_entry_list" model="ir.ui.view">
+        <field name="name">fuel.tank.entry.list</field>
+        <field name="model">fuel.tank.entry</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="date"/>
+                <field name="tank_id"/>
+                <field name="liters"/>
+                <field name="price_per_liter"/>
+                <field name="total_amount"/>
+                <field name="source"/>
+                <field name="user_id"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_fuel_tank_entry_form" model="ir.ui.view">
+        <field name="name">fuel.tank.entry.form</field>
+        <field name="model">fuel.tank.entry</field>
+        <field name="arch" type="xml">
+            <form string="Stock Entry">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="tank_id"/>
+                            <field name="date"/>
+                            <field name="source" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="liters"/>
+                            <field name="price_per_liter"/>
+                            <field name="total_amount" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="user_id" readonly="1"/>
+                        <field name="picking_id" readonly="1"/>
+                        <field name="purchase_id" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_fuel_tank_entry_pivot" model="ir.ui.view">
+        <field name="name">fuel.tank.entry.pivot</field>
+        <field name="model">fuel.tank.entry</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="date" type="row"/>
+                <field name="tank_id" type="row"/>
+                <field name="liters" type="measure"/>
+                <field name="total_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="view_fuel_tank_entry_graph" model="ir.ui.view">
+        <field name="name">fuel.tank.entry.graph</field>
+        <field name="model">fuel.tank.entry</field>
+        <field name="arch" type="xml">
+            <graph string="Entries" type="bar">
+                <field name="date" type="row"/>
+                <field name="liters" type="measure"/>
+                <field name="total_amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="view_fuel_tank_entry_search" model="ir.ui.view">
+        <field name="name">fuel.tank.entry.search</field>
+        <field name="model">fuel.tank.entry</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="date"/>
+                <field name="tank_id"/>
+                <field name="source"/>
+                <field name="user_id"/>
+            </search>
+        </field>
+    </record>
+</odoo>

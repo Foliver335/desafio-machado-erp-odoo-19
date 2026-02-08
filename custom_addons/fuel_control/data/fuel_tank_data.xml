@@ -1,0 +1,10 @@
+<odoo>
+    <data noupdate="1">
+        <record id="fuel_tank_main" model="fuel.tank">
+            <field name="name">Main Tank</field>
+            <field name="code">TQ-001</field>
+            <field name="capacity_liters">6000</field>
+            <field name="price_per_liter">5.50</field>
+        </record>
+    </data>
+</odoo>
