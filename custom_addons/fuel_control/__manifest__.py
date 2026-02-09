@@ -19,7 +19,9 @@
         "views/fuel_tank_views.xml",
         "views/fuel_tank_entry_views.xml",
         "views/stock_picking_views.xml",
-        "data/fuel_tank_data.xml",
+    ],
+    "demo": [
+        "demo/fuel_tank_demo.xml",
     ],
     "installable": True,
     "application": True,
