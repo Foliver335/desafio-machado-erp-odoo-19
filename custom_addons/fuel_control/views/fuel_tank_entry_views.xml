@@ -53,7 +53,7 @@
                         </group>
                     </group>
                     <group>
-                        <field name="user_id" readonly="1"/>
+                        <field name="user_id"/>
                         <field name="picking_id" readonly="1"/>
                         <field name="purchase_id" readonly="1"/>
                     </group>

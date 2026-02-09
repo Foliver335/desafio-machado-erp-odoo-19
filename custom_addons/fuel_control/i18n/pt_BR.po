@@ -116,17 +116,17 @@ msgstr "Combustível"
 #. module: fuel_control
 #: model:res.groups,name:fuel_control.group_fuel_admin
 msgid "Fuel Control - Administrator"
-msgstr "Combustível - Administrador"
+msgstr "Controle de Combustivel - Administrador"
 
 #. module: fuel_control
 #: model:res.groups,name:fuel_control.group_fuel_analyst
 msgid "Fuel Control - Analyst"
-msgstr "Combustível - Analista"
+msgstr "Controle de Combustivel - Analista"
 
 #. module: fuel_control
 #: model:res.groups,name:fuel_control.group_fuel_driver
 msgid "Fuel Control - Driver"
-msgstr "Combustível - Motorista"
+msgstr "Controle de Combustivel - Motorista"
 
 #. module: fuel_control
 #: model:ir.module.category,name:fuel_control.module_category_fuel_control
@@ -175,7 +175,7 @@ msgstr "Entrada gerada"
 #. module: fuel_control
 #: model:ir.model.fields,field_description:fuel_control.field_fuel_refuel__hour_meter
 msgid "Hour Meter"
-msgstr "Hodrômetro"
+msgstr "Horímetro"
 
 #. module: fuel_control
 #: model:ir.model.fields,field_description:fuel_control.field_fuel_control_mixin__id
