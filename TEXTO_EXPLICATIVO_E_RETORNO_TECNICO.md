@@ -5,7 +5,7 @@ The `fuel_control` module follows the standard Odoo pattern for custom addons. T
 - `models/`: business rules and validations.
 - `views/`: screens (lists, forms), reports (pivot/graph), search views, and menus.
 - `security/`: user groups and access rules (`ir.model.access.csv`).
-- `data/`: initial tank data (with `noupdate` to avoid overwriting real stock).
+- `demo/`: initial tank data (with `noupdate` to avoid overwriting real stock).
 
 The functional domain is divided into three main entities:
 - `fuel.refuel`: registers refuels with vehicle/equipment, date/time, odometer/hour meter, liters, price, computed total, and responsible user. The movement reduces tank stock.
@@ -14,7 +14,7 @@ The functional domain is divided into three main entities:
 
 There is integration with purchase receipts via `stock.picking`: when an incoming receipt is validated with fuel fields filled, the system automatically creates a linked stock entry.
 
-Views include list, form, search, and reports (pivot/graph). Menus follow the Chapter03 pattern with `menuitem` in the same views file.
+Views include list, form, search, and reports (pivot/graph). Menus follow pattern with `menuitem` in the same views file.
 
 Integrations with other modules are used to inherit functionality from `base`, `fleet`, `purchase`, and `stock`.
 
@@ -81,7 +81,7 @@ O modulo `fuel_control` segue o padrao Odoo para addons customizados. A organiza
 - `models/`: regras de negocio e validacoes.
 - `views/`: telas (listas, formularios), relatorios (pivot/graph), search views e menus.
 - `security/`: grupos de usuarios e regras de acesso (`ir.model.access.csv`).
-- `data/`: dados iniciais do tanque (com `noupdate` para nao sobrescrever o estoque real).
+- `demo/`: dados iniciais do tanque (com `noupdate` para nao sobrescrever o estoque real).
 
 O dominio funcional foi dividido em tres entidades principais:
 - `fuel.refuel`: registra abastecimentos com veiculo/vehicleo, data/hora, hodometro/horimetro, litros, preco, total calculado e usuario responsavel. 
